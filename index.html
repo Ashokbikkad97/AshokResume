@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashok's Portfolio</title>
+    <link rel="stylesheet" href="./private/styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <img class="profilePhoto" src="./assets/Images/Ashok.jpg" alt="Ashok Bikkad">
+        <div class="intro">
+            <h1>Ashok Bikkad</h1>
+            <p>Automation / Manual Test Engineer | B.Tech (ENTC) | Pune</p>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section class="section about" id="about">
+        <h2>About Me</h2>
+        <p>
+            Web Automation Testing using Selenium WebDriver, Java, TestNG, Cucumber, Maven, Git, SVN, Jenkins & Selenium Grid using Page Object Model. 
+            API Testing using Postman and Swagger API Tool. Manual Testing Techniques with all aspects of SDLC and STLC. 
+            Experience of Framework Design from Scratch for Web Automation. Developing, Executing & Maintaining Automation Test Cases using Java, SQL, HTML & JavaScript.
+        </p>
+        <p>
+            Tools Experience - ChroPath, AutoIT, Putty, Oracle VM, BrowserStack, Katalon Recorder. Experience of working in Agile & Scrum Environment. 
+            Familiar with Functional & Non-Functional Testing, Mobile Testing, Regression & Smoke Testing. Test & Defect Management Process using JIRA.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <h2>Contact Details</h2>
+        <ul>
+            <li><strong>Phone:</strong> +91-9359160114</li>
+            <li><strong>Email:</strong> ashokbikkad97@gmail.com</li>
+            <li><strong>Address:</strong> 402 A Wing, Sada Subh Complex, Wagholi, Pune, Maharashtra, India, ZIP Code: 412207</li>
+        </ul>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>Bachelor of Technology | Electronics & Telecommunication from GH. Raisoni College of Engineering & Management, Pune with 8.36 CGPA. Passing Year: 2020</li>
+            <li>Diploma (Polytechnic) | Electronics & Telecommunication from Yashwantrao Chavan Institute of Polytechnic. Passing Year: 2017</li>
+            <li>SSC | From Swami Vivekanand Vidhya Mandir from Maharashtra State Board. Passing Year: 2013</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Direct Carrier Billing</h3>
+            <p><strong>Company:</strong> Huawei Technologies India Private Limited (Bengaluru, Karnataka: Onsite)</p>
+            <p><strong>Duration:</strong> Mar 2022 to Nov 2022</p>
+            <p>Direct carrier billing (DCB) is an online mobile payment method which allows users to make purchases by charging payments to their mobile phone carrier bill.</p>
+        </div>
+        <div class="project">
+            <h3>Artificial Intelligence for Cloud-assisted Smart Factory</h3>
+            <p><strong>Institution:</strong> GHRCEM (Pune: Offsite)</p>
+            <p><strong>Duration:</strong> Sep 2020</p>
+            <p>Improving manufacturing processes by building a smart autonomously working factory with advanced technology like Industry 4.0. Enhancing performance such as system flexibility, efficiency, and intelligence.</p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <h2>Experience Summary</h2>
+        <ul>
+            <li>Developing, executing, and maintaining automation test cases using Java, SQL, HTML, and JavaScript.</li>
+            <li>Debugging and running tests, analyzing test results.</li>
+            <li>Experienced in functional and non-functional testing, regression, and smoke testing.</li>
+            <li>Test and defect management using JIRA in Agile and Scrum environments.</li>
+        </ul>
+    </section>
+
+    <script>
+        const sections = document.querySelectorAll('.section');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        sections.forEach(section => observer.observe(section));
+    </script>
+
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Quick Links -->
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <ul>
+                <li><strong>Phone:</strong> +91-9359160114</li>
+                <li><strong>Email:</strong> <a href="mailto:ashokbikkad97@gmail.com">ashokbikkad97@gmail.com</a></li>
+                <li><strong>Address:</strong> Wagholi, Pune, Maharashtra</li>
+            </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-section">
+            <h3>Follow Me</h3>
+            <div class="social-icons">
+                <a href="#"><img src="./assets/Images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="./assets/Images/instagram (1).png" alt="LinkedIn"></a>
+                <a href="#"><img src="./assets/Images/whatsapp.png" alt="GitHub"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Ashok Bikkad. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+</body>
+</html>
